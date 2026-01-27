@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Anotações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-text">Carregando...</div>
+    </div>
+
+    <div class="auth-screen" id="authScreen">
+        <div class="auth-card">
+            <h1 id="authTitle">Entrar</h1>
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            
+            <form id="loginForm" style="display: none;">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <div class="auth-link">
+                    Não tem uma conta?
+                    <button type="button" onclick="switchToRegister()">Criar conta</button>
+                </div>
+            </form>
+
+        
+            <form id="registerForm" style="display: none;">
+                <div class="form-group">
+                    <label for="registerUsername">Nome de Usuário</label>
+                    <input type="text" id="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Senha</label>
+                    <input type="password" id="registerPassword" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirmar Senha</label>
+                    <input type="password" id="registerConfirmPassword" minlength="6" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Criar Conta</button>
+                <div class="auth-link">
+                    Já tem uma conta?
+                    <button type="button" onclick="switchToLogin()">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="notes-screen" id="notesScreen" style="display: none;">
+        <div class="header">
+            <div class="header-title">
+                <h1>Minhas Anotações</h1>
+                <p id="userEmail"></p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-logout" onclick="logout()">Sair</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <button class="btn-new-note" onclick="createNote()">+ Nova Anotação</button>
+                <div class="notes-list" id="notesList">
+                    <div class="empty-notes-message">Nenhuma anotação ainda</div>
+                </div>
+            </div>
+
+            <div class="editor">
+                <div class="empty-state" id="emptyState">
+                    Selecione uma anotação ou crie uma nova
+                </div>
+
+                <div class="editor-content" id="editorContent" style="display: none;">
+                    <input
+                        type="text"
+                        class="note-title-input"
+                        id="noteTitle"
+                        placeholder="Título da anotação"
+                    >
+                    <textarea
+                        class="note-content-input"
+                        id="noteContent"
+                        placeholder="Escreva sua anotação aqui..."
+                    ></textarea>
+                    <div class="editor-actions">
+                        <button class="btn-save" onclick="saveNote()">Salvar</button>
+                        <button class="btn-delete" onclick="deleteNote()">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
