@@ -5,7 +5,7 @@
 *  Carlos
 *  Eliza
 
-  # Projeto Gerenciador de Tarefas 
+  # Projeto Gerenciador de Anotações 
 
   ## Descriação 
 
@@ -38,7 +38,7 @@
       * Node.js
       * integração entre front-end e back-end
    
-    # Tecnologias Utilizadas
+    #   Aplicações Utilizadas
 
     ## Front-end
      * HTML
@@ -53,3 +53,4 @@
 
     * Utilizamos o banco de dados relacional (Mysql)
    
+
