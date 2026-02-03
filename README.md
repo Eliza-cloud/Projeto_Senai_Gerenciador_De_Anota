@@ -124,11 +124,11 @@ Usuário cria uma nova anotação e salva no sistema.
 ## Procedimento:
 ● Usuário faz login no sistema.
 
-● Clica em “Nova Anotação”.
+● Clica no canto superior direito em “Nova Anotação”.
 
 ● Insere título e conteúdo.
 
-● Salva a anotação.
+● Clicar no botão salva estara centralizado vai salvar a anotação.
 
 ## Resultado Esperado:
 A anotação é salva corretamente e fica disponível para visualização posterior.
@@ -150,7 +150,7 @@ O sistema mantém um tempo de resposta aceitável, sem travamentos ou quedas do
 servidor.
 
 ## Critério de Sucesso:
-As páginas carregam corretamente e as ações são executadas sem atrasos excessivos.
+As páginas carregam corretamente e as ações são executadas sem atrasos excessivos .
 
 # 5- Teste (sistema de etiquetas)
 
@@ -169,8 +169,9 @@ Após adicionar o sistema de etiquetas (tags).
 
 ● Salvar
 
-● Excluir anotações
+● Excluir anotações, o batão de excluir estara centralizado do lado do batão de salvar
 
 ## Resultado Esperado:
 Todas as funcionalidades antigas continuam funcionando corretamente após a
 implementação das tags.
+
