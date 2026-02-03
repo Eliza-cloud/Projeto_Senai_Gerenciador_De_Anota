@@ -150,7 +150,7 @@ O sistema mantém um tempo de resposta aceitável, sem travamentos ou quedas do
 servidor.
 
 ## Critério de Sucesso:
-As páginas carregam corretamente e as ações são executadas sem atrasos excessivos .
+As páginas carregam corretamente e as ações são executadas sem atrasos excessivos OBS:10 Minutos para atrasos.
 
 # 5- Teste (sistema de etiquetas)
 
@@ -174,4 +174,5 @@ Após adicionar o sistema de etiquetas (tags).
 ## Resultado Esperado:
 Todas as funcionalidades antigas continuam funcionando corretamente após a
 implementação das tags.
+
 
